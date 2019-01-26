@@ -3,7 +3,7 @@ This script calls the Yelp Fusion API to identify coffee shops
 in Upper Manhattan, the parameters of which are defined by Latitude
 and Longitude coordinates, in addition to select zip codes.
 
-Note that Yelp limits the number of API calls an individual user can make per day.
+Note that Yelp limits the number of API calls an individual user can make per dayself.
 
 The script creates a JSON file of businesses which is then mapped using a Leaflet.js script.
 """
@@ -31,11 +31,11 @@ BUSINESS_PATH = '/v3/businesses/'  # Business ID will come after slash.
 DEFAULT_TERM = 'cafes'
 DEFAULT_LATITUDE = 40.841022
 DEFAULT_LONGITUDE = -73.939791
-DEFAULT_RADIUS = 4000
+DEFAULT_RADIUS = 6000
 SEARCH_LIMIT = 50
 DEFAULT_OFFSET = 0
 
-zipcodes = ['10026', '10027', '10030', '10031', '10032', '10033', '10034' '10035', '10037', '10039', '10040']
+zipcodes = ['10026', '10027', '10030', '10031', '10032', '10033', '10034', '10035', '10037', '10039', '10040']
 cafes = {}
 
 try:
